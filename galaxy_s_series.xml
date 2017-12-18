@@ -1,31 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-  <remote  name="github"
-           fetch="https://github.com/" />
+  <remote  name="aries-ubi"
+           fetch="https://github.com/aries-ubi" />
 
   <!-- Vendor Blobs -->
-  <project name="xc-racer99/proprietary_vendor_samsung" path="vendor/samsung" remote="github" revision="aosp-7.1" clone-depth="5" />
+  <project name="proprietary_vendor_samsung" path="vendor/samsung" remote="aries-ubi" revision="aosp-7.1" clone-depth="1" />
 
   <!-- Device Trees -->
-  <project name="xc-racer99/android_device_samsung_telusgalaxys4gmtd" path="device/samsung/galaxys4gmtd" remote="github" revision="aosp-7.1" />
-  <project name="xc-racer99/android_device_samsung_captivatemtd" path="device/samsung/captivatemtd" remote="github" revision="aosp-7.0" />
-  <project name="xc-racer99/android_device_samsung_galaxysmtd" path="device/samsung/galaxysmtd" remote="github" revision="aosp-7.1" />
-
-  <!-- Prebuilt kernels -->
-  <project name="xc-racer99/android_device_samsung_galaxys4gmtd-kernel" path="device/samsung/galaxys4gmtd-kernel" remote="github" revision="aosp-7.1" clone-depth="1" />
-
-  <!-- Galaxy S Common Repos -->
-  <project name="xc-racer99/android_device_samsung_aries-common" path="device/samsung/aries-common" remote="github" revision="aosp-7.1" />
-  <project name="xc-racer99/android_packages_apps_SamsungServiceMode" path="packages/apps/SamsungServiceMode" remote="github" revision="android-6.0" />
-  <project name="xc-racer99/android_hardware_samsung" path="hardware/samsung" remote="github" revision="aosp-7.1" />
+  <project name="android_device_samsung_fascinate4gubi" path="device/samsung/fascinate4gubi" remote="aries-ubi" revision="aosp-7.1" />
+  <!--project name="android_device_samsung_galaxys4gubi" path="device/samsung/galaxys4gubi" remote="aries-ubi" revision="aosp-7.1" />
+  <project name="android_device_samsung_captivateubi" path="device/samsung/captivateubi" remote="aries-ubi" revision="aosp-7.1" />
+  <project name="android_device_samsung_galaxysubi" path="device/samsung/galaxysubi" remote="aries-ubi" revision="aosp-7.1" /-->
 
   <!-- Kernel Repo -->
-  <project name="xc-racer99/android_kernel_samsung_aries" path="kernel/samsung/aries" remote="github" revision="aosp-7.1" />
+  <project name="android_kernel_samsung_aries" path="kernel/samsung/aries" remote="aries-ubi" revision="aosp-7.1" />
 
-  <!-- Misc Other Projects -->
-  <project name="CyanogenMod/android_external_yaffs2" path="external/yaffs2" remote="github" revision="cm-14.1" />
-  <project name="xc-racer99/android_external_mtd-utils" path="external/mtd-utils" remote="github" revision="2.0.1-android" />
+  <!-- Prebuilt Kernels -->
+  <project name="android_device_samsung_fascinate4gubi-kernel" path="device/samsung/fascinate4gubi-kernel" remote="aries-ubi" revision="aosp-7.1" clone-depth="1"/>
+  <!--project name="android_device_samsung_galaxys4gubi-kernel" path="device/samsung/galaxys4gubi-kernel" remote="aries-ubi" revision="aosp-7.1" clone-depth="1"/>
+  <project name="android_device_samsung_galaxysubi-kernel" path="device/samsung/galaxysubi-kernel" remote="aries-ubi" revision="aosp-7.1" clone-depth="1"/>
+  <project name="android_device_samsung_captivateubi-kernel" path="device/samsung/captivateubi-kernel" remote="aries-ubi" revision="aosp-7.1" clone-depth="1"/-->
+
+  <!-- Common Repos -->
+  <project name="android_device_samsung_aries-common" path="device/samsung/aries-common" remote="aries-ubi" revision="aosp-7.1" />
+  <project name="android_device_samsung_galaxys4g-common" path="device/samsung/galaxys4g-common" remote="aries-ubi" revision="aosp-7.1" />
+  <project name="android_hardware_samsung" path="hardware/samsung" remote="aries-ubi" revision="aosp-7.1" />
+  <project name="android_packages_apps_SamsungServiceMode" path="packages/apps/SamsungServiceMode" remote="aries-ubi" revision="aosp-7.1" />
+
+  <!-- UBI Tools -->
+  <project name="android_external_mtd-utils" path="external/mtd-utils" remote="aries-ubi" revision="2.0.1-android" />
 
   <!-- Patches -->
-  <project name="xc-racer99/android_patches" path="patches" remote="github" revision="aosp-7.1" />
+  <project name="android_patches" path="patches" remote="aries-ubi" revision="aosp-7.1" />
 </manifest>
