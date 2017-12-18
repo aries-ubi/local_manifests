@@ -2,7 +2,7 @@
 <manifest>
   <remote name="omni" fetch="https://github.com/omnirom/" />
   <remove-project path="bootable/recovery" name="platform/bootable/recovery" groups="pdk" />
-  <project path="bootable/recovery" name="omnirom/android_bootable_recovery" remote="omni" revision="android-7.1" />
+  <project path="bootable/recovery" name="android_bootable_recovery" remote="omni" revision="android-7.1" />
 
-  <project path="external/busybox" name="omnirom/android_external_busybox" remote="omni" revision="android-7.1" />
+  <project path="external/busybox" name="android_external_busybox" remote="omni" revision="android-7.1" />
 </manifest>
